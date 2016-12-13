@@ -1,0 +1,20 @@
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/*Pseudo- code Exercise 
+Step 1 Look at your list of numbers, an array that will be in a var named numbers
+Step 2 reverse the array
+Step 3 if statement, for number greater than 10
+Step 4 alert the user stating "more is better"
+Step 5 alert user if the number is less than 10 with "less is more"
+Step 6 var number=['2','12','45','5','78']
+
+*/
