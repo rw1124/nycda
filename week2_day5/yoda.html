@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="yoda.js"></script>
+	<title>Star Wars Name</title>
+	<link rel="stylesheet" type="text/css" href="yoda.css">
+</head>
+<body>
+
+		<form class="entry-form">
+			Jedi Name  
+			<br>
+			Last Name
+			<input id="last" type="text" oninput="getYourJediName" maxlength=3 minlength=3></input>
+			<br>
+			First Name
+			<input  id="first" type="text" oninput="getYourJediName" maxlength=2 minlength=2></input>
+			<br>
+			Moms First Name
+			<input  id="momsName" type="text" oninput="getYourJediName" maxlength=2 minlength=2></input>
+			<br>
+			Birth City
+			<input  id="birth" type="text" oninput="getYourJediName" maxlength=3 minlength=3></input>
+			<br>
+			Your Jedi Name
+			<input  id="jediName" type="text"></input>
+
+
+		</form>
+
+			
+
+			<div class="stars"></div>
+
+			<div class="twinkling"></div>
+			
+			<div class="clouds"></div>
+</body>
+</html>
