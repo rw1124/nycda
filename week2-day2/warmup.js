@@ -9,7 +9,7 @@ var fruits = ['banana','apple','orange'];
 var friends = [['Eric', 'blue'], ['Rachel', 'green'], ['Jen','gray']];
 
 var person = { name: 'Eric', toes: '10', hairColor: 'blonde'}
-	console.log("Your buddy Eric has 10 toes and his hair is blonde");
+	console.log("Your buddy person.name has person.toes and his hair is person.hairColor");
 	console.log(person.name);
 	console.log(person)
 
@@ -39,7 +39,7 @@ console.log(area);
 console.log(fruits.reverse());
 
 
-var = selectedDoor = prompt("which door do you choose? 1, 2 or 3?");
+var selectedDoor = prompt("which door do you choose? 1, 2 or 3?");
 
 if(selectedDoor == 1){
 	alert("you've won a car");
@@ -50,7 +50,6 @@ else if(selectedDoor == 2){
 else if (selectedDoor == 3){
 	alert("you've won a spaceship");
 }
-else
 
 	
 
