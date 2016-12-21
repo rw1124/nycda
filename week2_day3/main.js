@@ -3,7 +3,6 @@ function changeHeader(event){
 	console.log(event);
 
 	var firstNameElement = document.getElementById('first-name');
-	
 
 	// grab the value of the first mname input
 	// set equalto a variable

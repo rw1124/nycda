@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	
+	
+	
+	<title>Personal Jukebox</title>
+	<!-- <audio src="common.mp3" autoplay="autoplay" loop="loop"></audio> -->
+</head>
+<body>
+
+<h1>Personal Jukebox</h1>
+
+
+
+
+<audio id="wish" src="wish.mp3" controls></audio>
+<audio id="16" src="16.mp3" ></audio>
+<audio id="common" src="common.mp3" ></audio>
+<audio id="highwayman" src="highwayman.mp3" ></audio>
+<div>
+  <button onclick="playSong()">Play the Audio</button>
+  <button onclick="pauseSong()">Pause the Audio</button>
+  <button onclick="increaseVolume()">Increase Volume</button>
+  <button onclick="decreaseVolume()">Decrease Volume</button>
+</div>
+<h1>Curently Playing</h1>
+<h1 id="current-song"> No Song </h1>
+
+<script src="jukebox.js"></script>
+</body>
+</html>
