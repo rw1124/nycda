@@ -1,0 +1,27 @@
+.cell {
+  height: 200px;
+  width: 200px;
+  background-color: #ffffcc;
+  display: inline-block;
+}
+
+.cell:nth-child(3n) {
+  background-color: #ffffcc;
+  /* what property should I use to get a line break after this element? */
+}
+
+/* this doesn't work; at least not in safari */
+.cell:nth-child(3n)::after {
+  display: block;
+}
+
+button {
+    background-color: #71f442; 
+    border: none;
+    color: white;
+    padding: .5px .5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

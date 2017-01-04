@@ -1,0 +1,75 @@
+body{
+	background-image: url("HyperDerby.jpg");
+}
+
+#personal{
+	color: white;
+	font-size:32px;
+}
+#playing{
+	color: white;
+}
+#current-song{
+	color: white ;
+}
+
+#buttons {
+	vertical-align: middle;
+  	display: inline-block;
+  	margin: 0 auto;
+  	border-radius: 20px;
+  	padding: .75em;
+  	position: absolute;
+}
+
+.play-button-outer:hover {
+  	background-color: rgba(0, 0, 0, 0);
+}
+
+.play-button-outer:hover .play-button {
+  	opacity: 1;
+}
+
+#footer{
+	position: absolute;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	padding: 1rem;
+  	background-color: #efefef;
+  	text-align: center;
+    
+}
+#list{
+	vertical-align: middle;
+}
+.ensemble{
+	font-size: 20px;
+	align-content: center;
+}
+.sample{
+	color: blue;
+	font-size: 10px;
+	border-radius: 10px
+	border border-radius color: yellow;
+}
+
+.sample1{
+	color: blue;
+	font-size: 10px;
+	border-radius: 10px
+	border border-radius color: yellow;
+}
+
+.sample2{
+	color: blue;
+	font-size: 10px;
+	border-radius: 10px
+	border border-radius color: yellow;
+}
+.sample3{
+	color: blue;
+	font-size: 10px;
+	border-radius: 10px
+	border border-radius color: yellow;
+}

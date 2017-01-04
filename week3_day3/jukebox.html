@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="jukebox.js"></script>
+	<link rel="stylesheet" type="text/css" href="jukebox.css">
+
+	<title>Personal Jukebox</title>
+	<!-- <audio src="common.mp3" autoplay="autoplay" loop="loop"></audio> -->
+	
+
+
+</head>
+<body>
+
+    
+
+	<h1 id = "personal">Laser Jukebox</h1>
+
+	<h1 id = "playing">Currently Playing</h1>
+
+	<h1 id="current-song"> No Song </h1>
+
+	<audio id="fireandrain" src="fireandrain.mp3" preload="auto"></audio>
+	<audio id="doctormyeyes" src="doctormyeyes.mp3" preload="auto" ></audio>
+	<audio id="howdoyafeeltonight" src="howdoyafeeltonight.mp3" preload="auto"></audio>
+	<audio id="ohbabewhatwouldyousay" src="ohbabewhatwouldyousay.mp3" preload="auto"></audio>
+
+	<audio id = "fireandrainsample" src="https://p.scdn.co/mp3-preview/c56d88a6ec25caad667dd259a0760fe8f7d19a84?cid=null" preload="auto"></audio>
+	<audio id = "doctormyeyessample" src="https://p.scdn.co/mp3-preview/34393a3e0f434d9936ad1bef4a65c1dbbb4c64fb?cid=null" preload="auto"></audio>
+	<audio id = "howdoyafeeltonightsample" src="https://p.scdn.co/mp3-preview/047f95e0c752700dcad4c6edb409666f37c75c4c?cid=null" preload="auto"></audio>
+	<audio id = "ohbabewhatwouldyousaysample" src="https://p.scdn.co/mp3-preview/74b236a0d6e3d8d6709f9f9cbce59577cd9b46f1?cid=null" preload="auto"></audio>
+
+
+<div id = "buttons">
+  <button onclick="playSong(songToPlay)" class="play-button-outer" class="play-button">Play</button>
+  <button onclick="pauseSong()"class=" play-button-outer" class="play-button">Pause</button>
+  <button onclick="shuffle()"class=" play-button-outer" class="play-button">Shuffle</button>
+  <button onclick="increaseVolume()" class="play-button-outer" class="play-button">Increase +</button>
+  <button onclick="decreaseVolume()" class="play-button-outer" class="play-button">Decrease -</button>
+  <button onclick="stopSong()" class="play-button-outer" class="play-button">Stop </button>
+</div>
+</div>
+	<br>
+	<br>
+	<br>
+	<br>
+<div id = "list">
+	<button class = "ensemble" onclick = "playSongWithReset(fireandrainSong)">Fire and Rain</button>
+	<button class = "sample"  onclick= "playSongWithReset(fireandrainsampleSong)">Sample</button>
+	<br>
+	<br>
+	<br>
+	<br>
+	<button class = "ensemble" onclick = "playSongWithReset(doctormyeyesSong)">Doctor My Eyes</button>
+	<button class = "sample1" onclick= "playSongWithReset(doctormyeyessampleSong)">Sample</button>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<button class = "ensemble" onclick = "playSongWithReset(howdoyafeeltonightSong)">How Do Ya Feel Tonight</button>
+	<button class = "sample2" onclick = "playSongWithReset(howdoyafeeltonightsampleSong)">Sample</button>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<button class = "ensemble" onclick = "playSongWithReset(ohbabewhatwouldyousaySong)">Oh Babe, What Would You Say?</button>
+	<button class = "sample3" onclick = "playSongWithReset(ohbabewhatwouldyousaysampleSong)">Sample</button>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</div>
+
+<footer id="footer">Davis and Weidner</footer>
+
+</body>
+</html>
