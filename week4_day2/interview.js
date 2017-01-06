@@ -64,23 +64,47 @@
 
 // Stringy Function
 
-function stringy (sizeChart){
-	// Step 1
-	var shoeSize = Size.get(sizeChart); 
-	// Step 2
-	var returnedArray = [] 
-	returnedArray.push(1);
-	// Step 3 and 4
-	returnedArray.push(0);
-	return returnedArray; 
+// function stringy (size){
+// 	// Step 1
+// 	var shoeSize = Size.get(sizeChart); 
+// 	// Step 2
+// 	var returnedArray = [] 
+// 	returnedArray.push(1);
+// 	// Step 3 and 4
+// 	returnedArray.push(0);
+// 	return returnedArray; 
 	
-	if(shoeSize == undefined) {shoeSize = ?;}
-	shoeSize = parseInt (shoeSize);
-	shoeSize = 1,0;
-	return 
+// 	if(shoeSize == undefined) {shoeSize = ?;}
+// 	shoeSize = parseInt (shoeSize);
+// 	shoeSize = 1,0;
+// 	return 
+// }
+
+function stringy(size){
+	var result = "";
+	var ten = "10"
+	var times = size / 2
+
+	if (size <=0){
+		return "Size must be a positive integer."
+	}
+	if (size % 2 == 1){
+		return "Size must be an even integer."
+	}
+	if (size % 1 != 0){
+		return "Size must be an integer."
+	}
+	for (i=1; i<= times; i++){
+		result += "10"
+	}
+
+	// 10
+	// size=6; 101010
+	// size = -; error
+	// size = .5; error
+	// size = odd ; error
+	return result;
 }
-
-
 
 // Reverse Order Integer
 
@@ -138,23 +162,62 @@ function fibonacci(){
 // Step 7 - if statement on the date of expiration, if expiration is 1 day less than coupon code return false.
 
 // Step 1
-function checkCoupon(){
-// Step 5
-	var coupon = coupon;
-	for (var i = 0; i <=6; i ++){
+// function checkCoupon(){
+// // Step 5
+// 	var coupon = coupon;
+// 	for (var i = 0; i <=6; i ++){
 
-function aplhanumeric()
-{
-	var letters = /^[0-9 a -zA-z] + $/;
-	if (inputtxt.value.match (letters))
-}
+// function aplhanumeric()
+// {
+// 	var letters = /^[0-9 a -zA-z] + $/;
+// 	if (inputtxt.value.match (letters))
+// }
+// 	return true; 
+// }
+// 	else  
+// {   
+// 	return false;  
+// }  
+// }  	
+
+function checkCoupon(code,expirationDate){
+	checkCode(code);
+	checkExpiration()
+	// if valid
 	return true; 
+	// if invalid
+	return false;
+	}
+function checkExpiration(expirationDate){
+	var today = new Date;
+	var expiration = new Date (expirationDate);
+	if(today < expiration){
+		return true;
+	} 	else{
+		return false;
+	}
 }
-	else  
-{   
-	return false;  
-}  
-}  	
+function checkCode(code){
+	if (code.length != 6){
+		return false;
+	}
+	var codeArray = code.split("")
+	var letters = [];
+	var numbers = [];
+
+	code.Array.foreach(function(element){
+		if (isNaN(element)){
+			letters.push(element);
+		}
+		});
 
 
+		if(letters.length == 3 && numbers.length ==3 ){
+			return true;
+		}
+			else { 
+			return false;
+		}
 
+
+	}
