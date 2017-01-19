@@ -1,0 +1,36 @@
+<h1> Create a New User </h1>
+
+<form method="POST" action="create-user">
+ <label> First Name </label>
+ <input name="first_name">
+ <br>
+ <label> Last Name </label>
+ <input name="last_name">
+  <br>
+ <label> Email </label>
+ <input name="email">
+ <br>
+ <input type="submit" value="Submit">
+</form>
+
+
+<table>
+	<thead>
+		<tr>
+			<th> First Name</th>
+			<th> Last Name</th>
+			<th> Email</th>
+		</tr>
+	</thead>
+	<tbody>
+
+<% @users.each do |user| %>
+	<tr>
+	<td><%= user.first_name %></td>
+    <td><%= user.last_name %></td>
+    <td><%= user.email %></td>
+    </tr>
+
+  	<% end %>
+  </tbody>
+</table>
