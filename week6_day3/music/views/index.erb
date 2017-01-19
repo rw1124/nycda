@@ -1,0 +1,34 @@
+<h1> My Songs </h1>
+
+<form action="/songs" method="post">
+
+  <label> First Name </label>
+  <input name="first_name" >
+  <br>
+  <label> Last Name </label>
+  <input name="last_name" >
+  <br>
+  <label> Title </label>
+  <input name="title" >
+  <br>
+
+  <input type="submit">
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Title</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @songs.each do |song| %>
+            <tr>
+                <td><%= song.first_name %></td>
+                <td><%= song.last_name %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>

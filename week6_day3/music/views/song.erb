@@ -1,0 +1,31 @@
+<h1> <%= @song.first_name %> <%= @song.last_name %> </h1>
+<h3> <%= @song.title %> </h3>
+
+<!-- This creates an edit form that can update attributes on your user -->
+
+<form action="/songs/<%=@song.id%>" method="post">
+  <input type="hidden" name="_method" value="PUT">
+
+  <label> First Name </label>
+  <input name="first_name" value="<%=@song.first_name%>">
+  <br>
+  <label> Last Name </label>
+  <input name="last_name" value="<%=@song.last_name%>">
+  <br>
+  <label> Title </label>
+  <input name="title" value="<%=@song.title%>">
+  <br>
+
+  <input type="submit" value="Edit Song">
+</form>
+
+<!-- end edit form -->
+
+<!-- This creates an empty form (will just show a button!) to delete your user -->
+<form action="/songs/<%=@song.id%>" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+
+
+  <input type="submit" value="Delete Song">
+</form>
+<!-- end delete form -->
