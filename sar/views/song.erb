@@ -1,0 +1,35 @@
+<h1> My Songs </h1>
+
+<form action="/songs" method="post">
+
+  <label> Author's Name </label>
+  <input name="author_name" >
+  <br>
+  <label> Year Published </label>
+  <input name="year_published" >
+  <br>
+  <label> Genre </label>
+  <input name="genre" >
+  <br>
+
+  <input type="submit">
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Author's Name</th>
+            <th>Year Published</th>
+            <th>Genre</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @songs.each do |user| %>
+            <tr>
+                <td><%= song.author_name %></td>
+                <td><%= song.year_published %></td>
+                <td><%= song.genre %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
