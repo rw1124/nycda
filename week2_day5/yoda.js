@@ -36,23 +36,24 @@ function getYourJediName(){
 	var birth = takeFirst3LettersOfBirthCity();
 	
 	var jediName = `${last}${first} ${mom}${birth}`;
-	var getyourJediName = $('#jediName').val('last' + 'first' + 'mom' + 'birth');
+	// $('#jediName').val(jediName);
+	$('#jediNameLabel').text(jediName);
 
 	// return getYourJediName;
 	console.log(jediName)
 
-	return getyourJediName ;
+	return jediName;
 }
 
 
 
 $(document).ready(function(){
 
-	$('#last').on('input', takeFirst3LettersOfLastName);
-	$('#first').on('input', takeFirst2LettersOfFirstName);
-	$('#momsName').on('input', takeFirst2LettersMomsFirstName);
-	$('#birth').on('input', takeFirst3LettersOfBirthCity);
-	$('#jediName').val();
+	$('#last').on('input', getYourJediName);
+	$('#first').on('input', getYourJediName);
+	$('#momsName').on('input', getYourJediName);
+	$('#birth').on('input', getYourJediName);
+	
 })
 
 	
